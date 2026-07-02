@@ -1,2 +1,101 @@
 # freecodecamp-survey-form-project
 Part of the FreeCodeCamp's Responsive Web Design Course, this is my HTML Survey Form project.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Longbeach Residents Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill out information about living on Longbeach that will be used to implement relevant developments that will benefit our community.
+    </p>
+    <form id="survey-form" action="" method="POST">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label" for="name">Name (Required field):</label>
+        <input required type="text" id="name" placeholder="e.g.Jane Doe">
+        <br>
+      
+        <label id="email-label" for="email">Email Address(Required field):</label>
+        <input required type="email" id="email" placeholder="e.g.fake@email.com">
+        <br>
+      
+        <label id="number-label" for="number">Age (Optional):</label>
+        <input type="number" id="number" min="18" max="100" placeholder="e.g.45">
+      </fieldset>
+      <br>
+      
+      <label for="dropdown">What best describes your current residency?</label>
+      <select id="dropdown">
+        <option selected value="personal-home">Personal home</option>
+        <option value="renting">Renting</option>
+        <option value="holiday-home">Holiday home</option>
+        <option value="business">Business</option>
+      </select>
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>How often do you use the playground in a month?(weather allowing)</legend>  
+        <label for="rarely">Rarely</label>
+        <input type="radio" id="rarely" name="playground-use" value="rarely">
+      
+        <label for="sometimes">Sometimes</label>
+        <input type="radio" id="sometimes" name="playground-use" value="sometimes">
+      
+        <label for="often">Often</label>
+        <input type="radio" id="often" name="playground-use" value="often">
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Which extra facilities would benefit you most?(check all that apply)</legend>
+        <label for="fitness-station">Fitness Station</label>
+        <input type="checkbox" id="fitness-station" name="facilities" value="fitness-station">
+        <br>
+
+        <label for="promenade">Promenade</label>
+        <input type="checkbox" id="promenade" name="facilities" value="promenade">
+        <br>
+
+        <label for="fishing-pier">Fishing Pier</label>
+        <input type="checkbox" id="fishing-pier" name="facilities" value="fishing-pier">
+        <br>
+        
+        <label for="lifeguard-tower">Lifeguard Tower</label>
+        <input type="checkbox" id="lifeguard-tower" name="facilities" value="lifeguard-tower">
+        <br>
+
+        <label for="monthly-neighbourhood-market">Monthly neighbourhood market</label>
+        <input type="checkbox" id="monthly-neighbourhood-market" name="facilities" value="monthly-neighbourhood-market">
+        <br>
+
+        <label for="accessibility-ramps">Accessibility Ramps</label>
+        <input type="checkbox" id="accessibility-ramps" name="facilities" value="accessibility-ramps">
+        <br>
+        
+        <label for="waste-management">Waste Management</label>
+        <input type="checkbox" id="waste-management" name="facilities" value="waste-management">
+        <br>
+
+        <label for="laundry">Laundry Service</label>
+        <input type="checkbox" id="laundry" name="facilities" value="laundry">
+        <br>
+
+        <label for="printing">Printing Service</label>
+        <input type="checkbox" id="printing" name="facilities" value="printing">
+        <br>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Please include any compliments, issues or suggestions you have." ></textarea>
+      </fieldset>
+      <br>
+      <button id="submit" type="submit">Submit Form</button>
+    </form>   
+  </body>
+</html>
